@@ -196,11 +196,11 @@ from math import sqrt ## импорт функции sqrt из библиоте�
 
 def main (**kwargs):
     """
-    This function counts the hypotenuse of a triangle according to the Pythagorean theorem
+    Эта функция считает площадь треугольника по теореме Пифагора
     Args:
-        **kwargs: 2 arguments corresponding to the lengths of the sides of the triangle
+        **kwargs: принимает аргументы, соответствующие длинам катетов треугольника (может принимать сколько угодно аргументов)
     Returns:
-        void: function just prints the hypotenuse of the triangle like float value
+        void: функция выводит в консоль полученную площадь
     """
     for key in kwargs.items():
         result = sqrt(key[1][0] ** 2 + key[1][1] ** 2)
